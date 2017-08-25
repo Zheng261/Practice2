@@ -38,5 +38,20 @@ namespace MarketLearning.Controllers
             }
             return View(log);
         }
+
+        [HttpPost]
+        public async Task LogErrorClient(string message, string location)
+        {
+            string username = User.Identity.Name;
+            await errorService.ErrorHandler(message, location, username);
+        }
+
+        [HttpPost]
+        public async Task LogError(Exception error)
+        {
+                string username = User.Identity.Name;
+                await errorService.ErrorHandler(error, username);
+        }
+    
     }
 }

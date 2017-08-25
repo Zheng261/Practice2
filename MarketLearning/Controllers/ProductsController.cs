@@ -74,7 +74,7 @@ namespace MarketLearning.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         // [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,Code,Info")]Product product)
+        public async Task<ActionResult> Create(Product product)
         {
             try
             {
@@ -121,7 +121,7 @@ namespace MarketLearning.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         //[ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Name,Code,Info")] Product product)
+        public async Task<ActionResult> Edit(Product product)
         {
             try
             {
