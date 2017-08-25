@@ -29,5 +29,9 @@ namespace MarketLearning.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MarketLearning.Models.Entities.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<MarketLearning.Models.Entities.Error> Errors { get; set; }
     }
 }
