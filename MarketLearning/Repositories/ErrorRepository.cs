@@ -80,8 +80,5 @@ namespace MarketLearning.Repositories
                 db.Entry(error).State = EntityState.Modified;
                 await db.SaveChangesAsync();
             }
-
-        }
     }
-}
 }

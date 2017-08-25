@@ -1,0 +1,56 @@
+﻿@model IEnumerable<LifeNavigators.Models.Entities.Error>
+
+@{
+    ViewBag.Title = "_List";
+}
+
+
+
+<table id="errorTable" class="table">
+
+    <thead>
+        <tr class="tr clickable">
+            <th>
+                Occurance
+            </th>
+            <th>
+                Username
+            </th>
+            <th>
+                Message
+            </th>
+            <th>
+                Error End
+            </th>
+            <th>
+                Location
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="td">
+                    @item.Occurance
+                </td>
+                <td class="td">
+                    @item.Username
+                </td>
+                <td class="td">
+                    @item.Message
+                </td>
+                <td class="td">
+                    @(item.ClientSide ? "Client" : "Server")
+                </td>
+                <td class="td">
+                    @item.Location
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+
+</table>

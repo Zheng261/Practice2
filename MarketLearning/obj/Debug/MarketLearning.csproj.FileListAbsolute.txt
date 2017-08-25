@@ -198,4 +198,5 @@ C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\Mar
 C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\MarketLearning.Migrations.product.resources
 C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\MarketLearning.csproj.GenerateResource.Cache
 C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\MarketLearning.Migrations.product1.resources
-C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\MarketLearning.Migrations.error.resources
+C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\MarketLearning.Migrations.Error.resources
+C:\Users\Zheng Yan\Desktop\MarketLearning\Practice2\MarketLearning\obj\Debug\MarketLearning.Migrations.product2.resources

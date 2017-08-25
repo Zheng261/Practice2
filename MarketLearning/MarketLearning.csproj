@@ -213,9 +213,13 @@
     <Compile Include="Migrations\201708250301409_product1.Designer.cs">
       <DependentUpon>201708250301409_product1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708250303222_error.cs" />
-    <Compile Include="Migrations\201708250303222_error.Designer.cs">
-      <DependentUpon>201708250303222_error.cs</DependentUpon>
+    <Compile Include="Migrations\201708250327582_Error.cs" />
+    <Compile Include="Migrations\201708250327582_Error.Designer.cs">
+      <DependentUpon>201708250327582_Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708250333359_product2.cs" />
+    <Compile Include="Migrations\201708250333359_product2.Designer.cs">
+      <DependentUpon>201708250333359_product2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -228,7 +232,9 @@
     <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Services\ErrorService.cs" />
     <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\Searching_SortingService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -293,10 +299,11 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Error\_View.cshtml" />
+    <Content Include="Views\Error\ErrorIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Error\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
@@ -321,8 +328,11 @@
     <EmbeddedResource Include="Migrations\201708250301409_product1.resx">
       <DependentUpon>201708250301409_product1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708250303222_error.resx">
-      <DependentUpon>201708250303222_error.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708250327582_Error.resx">
+      <DependentUpon>201708250327582_Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708250333359_product2.resx">
+      <DependentUpon>201708250333359_product2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

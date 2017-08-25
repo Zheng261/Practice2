@@ -62,7 +62,6 @@ namespace MarketLearning.Controllers
         }
 
         // GET: Products/Create
-        [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
             ViewBag.HighlightTab = "products";

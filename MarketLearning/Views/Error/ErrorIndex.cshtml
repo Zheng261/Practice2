@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MarketLearning.Models.Entities.Error>
+@{
+    ViewBag.Title = "ErrorIndex";
+}
+<div align="center">
+    <h1>ERROR LOG</h1>
+</div>
+<br />
+
+<div class="row col-lg-12">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 search-label" align="left">Search criteria:</div>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7"><input id="errorSearch" class="form-control input-lg" placeholder="Search Errors" /></div>
+    <div class="col-lg-3" align="right">
+        <button id="showtest" class="btn primaryButton">Reset the search</button>
+    </div>
+</div>
+<div class="row col-lg-12">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 search-label" align="left">Start date:</div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input id="startDate" class="form-control input-md" type="date" /></div>
+</div>
+<div class="row col-lg-12">
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 search-label" align="left">End date:</div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input id="endDate" class="form-control input-md" type="date" /></div>
+    <div class="col-lg-4" align="right">
+        <button id="startSearch" class="btn primaryButton">Search Date Range</button>
+    </div>
+</div>
+<div class="row">
+</div>
+<div>
+    <div id="filterContent">
+        @Html.Partial("_List", Model)
+    </div>
+    <div id="NoRecordPlaceHolder" class="heading2" align="center"></div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        $("#adminOptions").addClass("activeTab");
+    </script>
+}
+
